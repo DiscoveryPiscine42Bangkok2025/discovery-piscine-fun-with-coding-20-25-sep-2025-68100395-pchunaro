@@ -1,1 +1,37 @@
+/* reset ค่าเบื้องต้น */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
 
+/* ส่วนของ parallax */
+.parallax {
+  height: 100vh; /* สูงเท่าหน้าจอ */
+  background-attachment: fixed; /* key ทำให้ parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* "C:\Downloads\gal-2470769-20231102055932-ed6a692.jpg" */
+.img1 {"C:\Downloads\gal-2470769-20231102055932-ed6a692.jpg"
+  background-image: url("image1.jpg"); /* เปลี่ยนเป็นไฟล์จริงของคุณ */
+}
+
+.img2 {"C:\Downloads\gal-2470769-20231102055932-ed6a692.jpg"
+  background-image: url("image2.jpg");
+}
+
+/* RIIZE*/
+.content {
+  height: 50vh;
+  background: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
