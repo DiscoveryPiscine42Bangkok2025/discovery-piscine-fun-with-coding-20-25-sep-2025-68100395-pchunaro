@@ -1,4 +1,5 @@
-#!/bin/bash
+args=("$@")
+path=$(pwd)
 if [ $# -eq 0 ]
 then
     echo "No arguments supplied"
