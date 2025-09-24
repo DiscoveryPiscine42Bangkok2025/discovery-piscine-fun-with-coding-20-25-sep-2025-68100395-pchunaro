@@ -1,0 +1,356 @@
+:root {
+  --primary-color: #1e90ff;
+  --text-color: #ee6815;
+  --bg-color: #ffffff;
+  --max-width: 1200px;
+  --font-family: 'Inter', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.header {
+  border-bottom: 4.5px solid #ee6815;
+  padding: 10px 0;
+  background: var(--bg-color);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding-left: 0px; 
+  padding-right: 10px;
+}
+
+
+.logo-text {
+     position: relative;
+   left: -120px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+
+.site-name {
+  display: flex;
+  flex-direction: column; 
+  margin-left: 10px;
+}
+
+.site-name-th {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.site-name-en {
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+}
+
+
+.mitr-extralight { font-family: "Mitr", sans-serif; font-weight: 200; font-style: normal; }
+.mitr-light      { font-family: "Mitr", sans-serif; font-weight: 300; font-style: normal; }
+.mitr-regular    { font-family: "Mitr", sans-serif; font-weight: 400; font-style: normal; }
+.mitr-medium     { font-family: "Mitr", sans-serif; font-weight: 500; font-style: normal; }
+.mitr-semibold   { font-family: "Mitr", sans-serif; font-weight: 600; font-style: normal; }
+.mitr-bold       { font-family: "Mitr", sans-serif; font-weight: 700; font-style: normal; }
+
+
+.nav {
+  margin-left: auto; 
+  display: flex;
+  gap: 20px;
+}
+
+.nav .nav-link {
+  font-size: 1rem;
+   color: black;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav .nav-link.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.circle-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;        
+  height: 50px;       
+  border-radius: 50%; 
+  background-color:rgb(253, 253, 253); 
+  color: white;       
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+
+.circle-link:hover {
+  background-color: black; 
+  color: white;            
+}
+
+.header-subtitle {
+  margin-top: 5px;           
+   position: relative;
+  text-align:center;        
+   font-weight: 700;
+  text-decoration: none;
+}
+
+.header-subtitle a {
+  display: inline-block;      
+  padding: 4px 8px;          
+  border: 2px solid transparent; 
+  border-radius: 4px;        
+  text-decoration: none;      
+  color: #ee6815; 
+  transition: all 0.3s;       
+  margin-right: 8px;         
+}
+
+.header-subtitle a:hover {
+  border: 2px solid #ee6815;     
+  background-color: #f0f0f0;      
+  color: #ee6815;                 
+}
+
+
+
+
+
+
+
+
+.profile-card {
+  max-width: 400px;                    
+  margin: 40px auto;                   
+  padding: 20px;
+  border: 2px solid #ddd;              
+  border-radius: 12px;                 
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.2); 
+  text-align: center;
+  background-color: #fff;               
+}
+
+.profile-card .profile-img {
+  width: 150px;     
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-bottom: 15px;
+}
+
+.profile-card .profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1e90ff;  
+}
+
+.profile-card .profile-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+
+.skill-section {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.skill-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e90ff;
+}
+
+
+.skill-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.skill-card {
+  flex: 1 1 200px; 
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+
+.skill-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 2px 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Project Section */
+.project-section {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e90ff;
+}
+
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.project-card {
+  flex: 1 1 200px; 
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+
+.project-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 2px 6px 16px rgba(0,0,0,0.25);
+}
+
+
+.footer {
+  background-color: #ffffff;
+  border-radius: 12px; 
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.2); 
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1e90ff;
+}
+
+.footer-description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ee6815; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.profile-card .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.profile-card .profile-img:hover {
+  transform: scale(1.1);
+}
+
+.header {
+  position: fixed;     
+  top: 0;              
+  left: 0;
+  width: 100%;         
+  z-index: 1000;       
+  border-bottom: 4.5px solid #ee6815;
+  padding: 10px 0;
+  background: var(--bg-color);
+}
+body {
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding-top: 130px;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.email-highlight {
+  color: #ee6815;  
+  font-weight: 600; 
+}
+
+.footer-description {
+  font-family: "Mitr", sans-serif;
+  font-weight: 400; 
+  color: black;    
+}
+
+.email-highlight {
+  color: #ee6815;  
+  font-family: "Mitr", sans-serif; 
+  font-weight: 400;
+}
+body, * {
+  font-family: 'Mitr', sans-serif;
+}
